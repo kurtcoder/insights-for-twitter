@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+war {
+	archiveName 'twitterinsights.war'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+	compile 'com.googlecode.json-simple:json-simple:1.1'
+	compile 'org.apache.clerezza.ext:org.json.simple:0.4'
+	compile 'org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016'
+	compile 'org.glassfish.main.core:glassfish:4.1.1'
+	
+}
